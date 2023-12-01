@@ -330,6 +330,8 @@ The we press the "**Connect**" button. A new internet web browser window will be
 
 ![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/16e76bb0-ecea-46d6-841f-a2e4a276ad5e)
 
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/509566f3-3e33-4ac7-bd9d-91b680774183)
+
 After requesting the access with the Just-in-time policy we can use the Azure CLI for accessing the Linux VM.
 
 ![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/eb22d2e8-a528-41f7-a92e-76d3d8ffc975)
