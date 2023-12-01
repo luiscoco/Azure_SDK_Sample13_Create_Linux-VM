@@ -159,6 +159,18 @@ class Program
                     SourcePortRange = "*",
                     DestinationAddressPrefix = "*",
                     DestinationPortRange = "443", // HTTPS port
+                },
+                new SecurityRuleData()
+                {
+                    Name = "AllowRDP",
+                    Priority = 130,
+                    Access = SecurityRuleAccess.Allow,
+                    Direction = SecurityRuleDirection.Inbound,
+                    Protocol = SecurityRuleProtocol.Tcp,
+                    SourceAddressPrefix = "*",
+                    SourcePortRange = "*",
+                    DestinationAddressPrefix = "*",
+                    DestinationPortRange = "3389", // RDP port
                 }
             }
         };
