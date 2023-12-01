@@ -310,11 +310,16 @@ dotnet run
 
 ![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/4e7d44c4-44a0-407a-ad69-1f44ad2f3e7b)
 
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/09e003e4-6199-4367-9ec2-dbd187b79ba4)
+
 Then we upload the private key file
 
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/d9ffe082-1b6d-463f-bdec-4de7e0b3b3cb)
 
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/9a03f698-d9fe-46bf-974b-4f6c03b89fd0)
 
-The we press the "Connect" button. A new internet web browser window will be opened in a new tab with the Linux Virtual Machine connection.
+The we press the "**Connect**" button. A new internet web browser window will be opened in a new tab with the Linux Virtual Machine connection.
+
 
 
 
