@@ -296,7 +296,7 @@ dotnet run
 
 ## 9. Access with bastion
 
-
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/4e7d44c4-44a0-407a-ad69-1f44ad2f3e7b)
 
 Then we upload the private key file
 
@@ -422,7 +422,7 @@ sudo service xrdp restart
 sudo passwd azureuser
 ```
 
-## 12.4. OPEN REMOTE DESKTOP CONNECTION
+### 12.4. OPEN REMOTE DESKTOP CONNECTION
 
 Now Open "**Remote Desktop Connection**" application and type the Azure VM **Public IP address** and the username "**azureuser**" and then press connect:
 
@@ -446,7 +446,7 @@ And Check the access,
 
 After try/run again the  **Remote Desktop Connection**" application.
 
-## 12.5. HOW TO INSTALL VSCODE
+### 12.5. HOW TO INSTALL VSCODE
 
 Open a Terminal Emulator window and run the following commands to install the VSCode application
 
@@ -466,7 +466,7 @@ For accessing VSCode type the command:
 code
 ```
 
-## 12.6. HOW TO INSTALL GOOGLE CHROME
+### 12.6. HOW TO INSTALL GOOGLE CHROME
 
 ```bash
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
