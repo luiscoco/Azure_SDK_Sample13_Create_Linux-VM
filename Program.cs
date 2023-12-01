@@ -115,6 +115,18 @@ class Program
                     SourcePortRange = "*",
                     DestinationAddressPrefix = "*",
                     DestinationPortRange = "443", // HTTPS port
+                },
+                new SecurityRuleData()
+                {
+                    Name = "AllowRDP",
+                    Priority = 130,
+                    Access = SecurityRuleAccess.Allow,
+                    Direction = SecurityRuleDirection.Inbound,
+                    Protocol = SecurityRuleProtocol.Tcp,
+                    SourceAddressPrefix = "*",
+                    SourcePortRange = "*",
+                    DestinationAddressPrefix = "*",
+                    DestinationPortRange = "3389", // RDP port
                 }
             }
         };
@@ -149,7 +161,16 @@ class Program
                         "      [Resolve]\n" +
                         "      DNS=8.8.8.8 8.8.4.4\n" +
                         "runcmd:\n" +
-                        "  - systemctl restart systemd-resolved\n"
+                        "  - systemctl restart systemd-resolved\n" +
+                        "  - sudo apt-get update\n" +
+                        "  - sudo DEBIAN_FRONTEND=noninteractive apt-get -y install xfce4\n" +
+                        "  - sudo apt install xfce4-session\n" +
+                        "  - sudo apt-get -y install xrdp\n" +
+                        "  - sudo systemctl enable xrdp\n" +
+                        "  - sudo adduser xrdp ssl-cert\n" +
+                        "  - echo xfce4-session >~/.xsession\n" +
+                        "  - sudo service xrdp restart\n" +
+                        $"  - echo 'azureuser:Thismypassword123456' | sudo chpasswd\n"
                 )),
                 LinuxConfiguration = new LinuxConfiguration()
                 {
