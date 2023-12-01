@@ -42,7 +42,7 @@ dotnet restore
 ## 3. Input the C# source code.
 
 ```csharp
-using System;
+﻿using System;
 using System.Threading.Tasks;
 using Azure;
 using Azure.Core;
@@ -158,20 +158,22 @@ networkInterfaceInput.NetworkSecurityGroup = new NetworkSecurityGroupData()
 
 NetworkInterfaceResource networkInterface = await networkInterfaceCollection.CreateOrUpdate(WaitUntil.Completed, networkInterfaceName, networkInterfaceInput).WaitForCompletionAsync();
 
+
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Now we get the virtual machine collection from the resource group
 VirtualMachineCollection vmCollection = resourceGroup.GetVirtualMachines();
 // Use the same location as the resource group
 string vmName = "myVM";
+string adminusername = "azureuser";
 VirtualMachineData input2 = new VirtualMachineData(resourceGroup.Data.Location)
 {
     HardwareProfile = new VirtualMachineHardwareProfile()
     {
-        VmSize = VirtualMachineSizeType.StandardF2
+        VmSize = VirtualMachineSizeType.StandardE2SV3
     },
     OSProfile = new VirtualMachineOSProfile()
     {
-        AdminUsername = "adminUser",
+        AdminUsername = adminusername,
         ComputerName = "myVM",
         LinuxConfiguration = new LinuxConfiguration()
         {
@@ -179,8 +181,8 @@ VirtualMachineData input2 = new VirtualMachineData(resourceGroup.Data.Location)
             SshPublicKeys = {
                 new SshPublicKeyConfiguration()
                 {
-                    Path = $"/home/adminUser/.ssh/authorized_keys",
-                    KeyData = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsYfMIJ4eQKVMinetx193m2PZxFNmhhQMqu7HkLEdniRQENr0Z24YS5T1UUSjV3b5kxgkeORrGtgmuWJ7LNZQqu53asEeFv2B0zWaaJEacQWBAVDpFLtjHa/4NImyJ+OFLsQLNH8l9WHeJH7ip7GeOPER4KOvgCHO9zLwvtyJnfX5L/3aZJukRDw1G9+pO1GemDfKuVqHEe5CMYMA37y0xNukF+OKcGIoKGXXVeE6CfK1KOgtszjRVBhmeUQN11lfKYllZILrnmjsOmEE2NgHSf9N3RKmBcj43kTK9SCI+dclYq/D1S6saiUtqpB0aOZfim1jM04HvBFITQ9RW3eTMMOp8XJOtszs3N0/d4RS0LEEajtev1/mLlkWK25NKSmlknBCKWd8nSAYUXVy00tjJJNvBYVIW/VBDEkg9jddefBsA9xpBwxE0IZL+rn+n2fnx1JdG6C+cXi4l9lso6UL8exEI+WkGrxk2ut8uLKNfzdLSlW7hh/87zFl9h3v95/k= generated-by-azure", //<value of the public ssh key>
+                    Path = $"/home/" + adminusername + "/.ssh/authorized_keys",
+                    KeyData = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDU7y9f7dAjJxjESAKRU3HTXURWtFOkWhWMooT4GWkeghcgoJ2UiryLY9Pq7xQihh0c4/ar2rRRqgzHl/MLZicGgYxXMyS419H1JG1FYHSlsVqxXylvQMw/KlaL+DQFrwv9KOLpEHKF/WsQd8/8jWzy19xrNhHrQd/GE0DtEJ6TKb/2VUUGbWPE4tA85fdX7mu2dXxiAs18Gz2ANfgnipRjftBv9g89ISoJ7mGaLuIUEGesWIL3LV6uMuFVX0OXzXUHmVjtUXeUNCl/17GZtP0slnLFasOMyByrcAKw8sWBzNFyPNCisdpZhrJKLa6adxRDHKIELoGvfe9B9yhgKu59fk8i90tZPq00gWd83pulwrxzBFbVoVs7mdTsNaM66VS1MvIG6sQY+jRcd5RVdQUvTqLoGW+7FrLYgwIWxxefP7Js1ljGihTC7PY29AuQGokScMeFGmgQjWfPZAA3yWqBQbXdmI9qw269WSUNfMaSvkJ+MQxVAcy7a9apqD4Kr0E= generated-by-azure", //<value of the public ssh key>
                 }
             }
         }
@@ -207,11 +209,32 @@ VirtualMachineData input2 = new VirtualMachineData(resourceGroup.Data.Location)
                 StorageAccountType = StorageAccountType.StandardLrs
             }
         },
+        // ImageReference = new ImageReference()
+        // {
+        //     Publisher = "Canonical",
+        //     Offer = "UbuntuServer",
+        //     Sku = "18.04-LTS",
+        //     Version = "latest",
+        // },
+        // ImageReference = new ImageReference()
+        // {
+        //     Publisher = "Canonical",
+        //     Offer = "0001-com-ubuntu-server-focal",
+        //     Sku = "20_04-lts-gen2",
+        //     Version = "latest",
+        // },
+        // ImageReference = new ImageReference()
+        // {
+        //     Publisher = "RedHat",
+        //     Offer = "RHEL",
+        //     Sku = "87-gen2",
+        //     Version = "latest",
+        // },
         ImageReference = new ImageReference()
         {
             Publisher = "Canonical",
-            Offer = "UbuntuServer",
-            Sku = "18.04-LTS",
+            Offer = "0001-com-ubuntu-server-jammy",
+            Sku = "22_04-lts-gen2",
             Version = "latest",
         }
     }
