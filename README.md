@@ -248,35 +248,13 @@ class Program
 ## 4. Create a new SSH key pair in Azure Portal
 
 
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/36a8afba-58cb-490d-bc13-38bb0852992d)
-
-
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/25bf248d-6d15-459f-a743-153e34d78eef)
-
-
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/f5912320-fb8a-408c-b2c7-588a6591d66c)
-
-
-
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/ce62f6d7-7080-44da-b366-8b82dcf341ab)
-
-
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/21de7513-ca00-4b7b-8a1a-a6654744924f)
-
-
-
 
 
 ## 5. Copy the public key in the C# source code
 
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/806a7569-29c4-41ea-93e6-00afd465197a)
 
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/e572d73e-31e1-4312-b7d5-245a4cfe18d4)
-
-
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/789f7cbe-5cab-429c-909a-0407ee9cd602)
 
 ## 6. Download the private key *.pem file
 
