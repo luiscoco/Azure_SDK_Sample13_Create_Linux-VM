@@ -369,7 +369,7 @@ nslookup google.com
 If you cannot connect to internet then run the command:
 
 ```
-
+sudo nano /etc/systemd/resolved.conf
 ```
 
 Then uncomment the line: 
