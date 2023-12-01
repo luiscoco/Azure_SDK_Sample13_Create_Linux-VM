@@ -351,3 +351,90 @@ The we press the "Connect" button. A new internet web browser window will be ope
 ![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/b86be30c-3709-4382-87ad-9afd4f6882e2)
 
 ![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/e22d0bd5-838f-4f96-a245-19577c2b52de)
+
+## 11. Acces from Linux Virtual Machine to Internet
+
+Be sure your Linux Virtual Machine has access to internet. To do so run the following commands: 
+
+```
+ping 8.8.8.8
+```
+
+Also try to run this command:
+
+```
+nslookup google.com
+```
+
+If you cannot connect to internet then run the command:
+
+```
+sudo nano /etc/systemd/resolved.conf
+```
+
+Then uncomment the line: 
+
+```
+[Resolve]
+DNS=8.8.8.8 8.8.4.4
+```
+
+The file will be like this:
+
+```
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it under the
+#  terms of the GNU Lesser General Public License as published by the Free
+#  Software Foundation; either version 2.1 of the License, or (at your option)
+#  any later version.
+#
+# Entries in this file show the compile time defaults. Local configuration
+# should be created by either modifying this file, or by creating "drop-ins" in
+# the resolved.conf.d/ subdirectory. The latter is generally recommended.
+# Defaults can be restored by simply deleting this file and all drop-ins.
+#
+# Use 'systemd-analyze cat-config systemd/resolved.conf' to display the full config.
+#
+# See resolved.conf(5) for details.
+
+[Resolve]
+# Some examples of DNS servers which may be used for DNS= and FallbackDNS=:
+# Cloudflare: 1.1.1.1#cloudflare-dns.com 1.0.0.1#cloudflare-dns.com 2606:4700:4700::1111#cloudflare-dns.com 2606:4700:4># Google:     8.8.8.8#dns.google 8.8.4.4#dns.google 2001:4860:4860::8888#dns.google 2001:4860:4860::8844#dns.google
+# Quad9:      9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net
+DNS=8.8.8.8 8.8.4.4
+#FallbackDNS=
+#Domains=
+#DNSSEC=no
+#DNSOverTLS=no
+```
+
+Then press **Ctrl + o** for saving the file, and then press **Enter** and finally press **Ctrl + x** to exit the nano editor
+
+Then type the command:
+
+```
+sudo systemctl restart systemd-resolved
+```
+
+Then try again to connect with the command:
+
+```
+nslookup google.com
+```
+
+You should get this output:
+
+```
+azureuser@myVM:~$ nslookup google.com
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   google.com
+Address: 142.251.36.14
+Name:   google.com
+Address: 2a00:1450:400e:811::200e
+```
+
+
