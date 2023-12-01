@@ -423,5 +423,18 @@ Then try again to connect with the command:
 nslookup google.com
 ```
 
+You should get this output:
+
+```
+azureuser@myVM:~$ nslookup google.com
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   google.com
+Address: 142.251.36.14
+Name:   google.com
+Address: 2a00:1450:400e:811::200e
+```
 
 
