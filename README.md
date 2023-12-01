@@ -351,3 +351,14 @@ The we press the "Connect" button. A new internet web browser window will be ope
 ![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/b86be30c-3709-4382-87ad-9afd4f6882e2)
 
 ![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/e22d0bd5-838f-4f96-a245-19577c2b52de)
+
+## 11. Acces from Linux Virtual Machine to Internet
+
+Be sure your Linux Virtual Machine has access to internet. To do so run the following commands: 
+
+```
+ping 8.8.8.8
+```
+
+Also 
+
