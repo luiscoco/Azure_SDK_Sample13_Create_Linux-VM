@@ -282,12 +282,9 @@ class Program
 
 Copy the private key file (*.pem) and paste it in: "C:\Users\LEnriquez\.ssh"
 
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/6549bb6e-f3ea-4362-b02c-c5c85d800b11)
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/199af886-9be5-48ca-9972-19e5af83242b)
 
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/a3e77ee1-fcac-48e8-ab9c-e5714c3151d3)
-
-
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/c899d04f-1bd9-4c5f-a3bb-81c5d06684fc)
 
 ## 7. Build and run the application
 
