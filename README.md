@@ -296,21 +296,7 @@ The we press the "Connect" button. A new internet web browser window will be ope
 
 ## 10. Just-in-time policy required Microsoft Defender
 
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/571f9c85-979a-40e4-9e11-86e18bd1db3a)
 
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/a135dbd5-677c-4847-bb30-54c64afc8a2d)
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/713fea6a-9dd6-492b-a4c4-3d85e7898430)
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/bd705364-2584-4937-913e-b468be9c2932)
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/9bf453ca-4a20-4c41-9c4b-616c53e14c18)
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/569fab33-1e49-464e-9e6c-ace47aa4bf8e)
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/b86be30c-3709-4382-87ad-9afd4f6882e2)
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/e22d0bd5-838f-4f96-a245-19577c2b52de)
 
 ## 11. Acces from Linux Virtual Machine to Internet
 
