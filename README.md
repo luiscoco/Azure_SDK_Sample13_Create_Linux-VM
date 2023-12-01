@@ -309,7 +309,9 @@ The we press the "Connect" button. A new internet web browser window will be ope
 
 ## 10. Just-in-time policy required Microsoft Defender
 
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/cdfcd9a7-2305-48bf-83f1-82d869a81456)
 
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/14f3b082-78dc-43f1-b497-55c0bf4f0548)
 
 ## 11. Acces from Linux Virtual Machine to Internet
 
