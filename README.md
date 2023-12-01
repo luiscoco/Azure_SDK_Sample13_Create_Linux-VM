@@ -414,7 +414,7 @@ Then press **Ctrl + o** for saving the file, and then press **Enter** and finall
 Then type the command:
 
 ```
-sudo systemctl restart system-resolved
+sudo systemctl restart systemd-resolved
 ```
 
 Then try again to connect with the command:
