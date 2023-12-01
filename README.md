@@ -274,41 +274,24 @@ dotnet run
 
 ## 8. Access to the Virtual Machine 
 
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/8a33c493-66d7-4620-ad51-32abe1cda284)
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/5af957a3-c06f-4ca6-b75d-a25bd5d4cec4)
 
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/10dfda0a-8cdb-41a6-bea7-4324c7c38a22)
 
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/8b634a8e-a8bc-45b8-97c0-c246f85e463a)
-
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/47f652c9-b02e-412b-8073-1abe971d769c)
-
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/aca33308-2d83-4015-86f5-7166075de4b2)
-
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/3cfae7b2-a679-44b5-bbe7-ca70b83a3c99)
-
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/ab2f0633-5e78-4767-b8c0-3c31a40e0843)
-
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/a3429d84-c654-4ab1-8514-263b739329fb)
-
-
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/3a77c32a-a801-45c2-8b51-460ff0e3cb8e)
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/e7a93764-61e0-48ac-82a0-e228d78b6c60)
 
 
 ## 9. Access with bastion
 
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/946cf99b-8eab-4b57-accc-821890ac2557)
+
 
 Then we upload the private key file
 
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/de6c1653-4765-4bc1-81c8-6639bb7be121)
+
 
 The we press the "Connect" button. A new internet web browser window will be opened in a new tab with the Linux Virtual Machine connection.
 
-![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_VM/assets/32194879/ca9ffea1-14d1-49b3-9285-5b828af3eeda)
+
 
 
 ## 10. Just-in-time policy required Microsoft Defender
