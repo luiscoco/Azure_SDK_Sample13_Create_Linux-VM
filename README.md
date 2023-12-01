@@ -411,6 +411,17 @@ DNS=8.8.8.8 8.8.4.4
 
 Then press **Ctrl + o** for saving the file, and then press **Enter** and finally press **Ctrl + x** to exit the nano editor
 
+Then type the command:
+
+```
+sudo systemctl restart system-resolved
+```
+
+Then try again to connect with the command:
+
+```
+nslookup google.com
+```
 
 
 
