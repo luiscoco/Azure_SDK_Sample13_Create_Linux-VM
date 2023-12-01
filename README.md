@@ -247,8 +247,13 @@ class Program
 
 ## 4. Create a new SSH key pair in Azure Portal
 
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/8723cdfe-5adc-4c4f-b196-e6fed73f65d2)
 
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/6edd1d6e-d993-4853-8a38-92d872e41475)
 
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/64a6afbe-6cea-4640-a454-63596a3d4172)
+
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/47784a10-90c0-4048-8963-4c76e756e1a8)
 
 ## 5. Copy the public key in the C# source code
 
