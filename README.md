@@ -324,7 +324,29 @@ The we press the "**Connect**" button. A new internet web browser window will be
 
 ![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/cdfcd9a7-2305-48bf-83f1-82d869a81456)
 
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/aff79ab7-47a9-4ece-8801-3823cd437283)
+
 ![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/14f3b082-78dc-43f1-b497-55c0bf4f0548)
+
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/16e76bb0-ecea-46d6-841f-a2e4a276ad5e)
+
+After requesting the access with the Just-in-time policy we can use the Azure CLI for accessing the Linux VM.
+
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/eb22d2e8-a528-41f7-a92e-76d3d8ffc975)
+
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/281ecd40-869b-4be1-b668-6a0c7f49ae71)
+
+We can connect to the Linux VM with these commands:
+
+```
+az ssh vm --ip 13.95.138.186
+```
+
+or
+
+```
+az ssh vm --resource-group myRgName --name myVM --subscription 846901e6-da09-45c8-98ca-7cca2353ff0e
+```
 
 ## 11. Acces from Linux Virtual Machine to Internet
 
