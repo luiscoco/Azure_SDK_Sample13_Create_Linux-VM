@@ -1,4 +1,6 @@
-# How to create a Linux Virtual Machine (Ubuntu Server) with Azure SDK for .NET
+# How to create a Linux Virtual Machine (Ubuntu Server) with Azure SDK for .NET.
+
+# After creating the VM we will install VSCode, Google Chrome and .NET 8
 
 **NOTE:** for more information about VM with Azure SDK for .NET visit the URL 
 
