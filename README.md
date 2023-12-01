@@ -396,4 +396,94 @@ Name:   google.com
 Address: 2a00:1450:400e:811::200e
 ```
 
+## 12. How to install in the Ubuntu Server the GUI Desktop, VSCode, Google Chrome and .NET 8
 
+### 12.1. Run these commands to stall "xfce" using "apt":
+
+```bash
+sudo apt-get update
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install xfce4
+sudo apt install xfce4-session
+```
+
+### 12.2. Install and configure a remote desktop server:
+
+```bash
+sudo apt-get -y install xrdp
+sudo systemctl enable xrdp
+sudo adduser xrdp ssl-cert
+echo xfce4-session >~/.xsession
+sudo service xrdp restart
+```
+
+### 12.3. Set a local user account password, for example:"**Thismypassword123456**"
+
+```bash
+sudo passwd azureuser
+```
+
+## 12.4. OPEN REMOTE DESKTOP CONNECTION
+
+Now Open "**Remote Desktop Connection**" application and type the Azure VM **Public IP address** and the username "**azureuser**" and then press connect:
+
+![image](https://github.com/luiscoco/Azure_VM_Ubuntu_with_GUI_Desktop/assets/32194879/b1d97b46-f61a-4b84-9ea2-6fb2077df1db)
+
+Then enter the password "**Thismypassword123456**" to access the Linux GUI Desktop, it also requires another password, set the same one as before "**Thismypassword123456**":
+
+![image](https://github.com/luiscoco/Azure_VM_Ubuntu_with_GUI_Desktop/assets/32194879/88da3f7f-0f29-449f-8f81-ecb7dffe64ce)
+
+![image](https://github.com/luiscoco/Azure_VM_Ubuntu_with_GUI_Desktop/assets/32194879/d881368c-7876-4c09-851a-7e660470ae83)
+
+**IMPORTANT NOTE**: if you cannot access:
+
+Restart the VM 
+
+![image](https://github.com/luiscoco/Azure_VM_Ubuntu_with_GUI_Desktop/assets/32194879/74422ae2-9c96-4f86-803e-cf634a9b917a)
+
+And Check the access, 
+
+![image](https://github.com/luiscoco/Azure_VM_Ubuntu_with_GUI_Desktop/assets/32194879/5f0bdce7-fe17-4078-b703-5c49f9b5f238)
+
+After try/run again the  **Remote Desktop Connection**" application.
+
+## 12.5. HOW TO INSTALL VSCODE
+
+Open a Terminal Emulator window and run the following commands to install the VSCode application
+
+![image](https://github.com/luiscoco/Azure_VM_Ubuntu_with_GUI_Desktop/assets/32194879/98e76ee1-5832-4536-9692-babdce81e9ad)
+
+```bash
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo apt install code
+```
+
+For accessing VSCode type the command:
+
+```
+code
+```
+
+## 12.6. HOW TO INSTALL GOOGLE CHROME
+
+```bash
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
+
+
+### 12.7. HOW TO INSTALL .NET 8 SDK
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+
+sudo apt update
+sudo apt install -y apt-transport-https
+sudo apt update
+sudo apt install -y dotnet-sdk-8.0
+
+dotnet --version
+```
