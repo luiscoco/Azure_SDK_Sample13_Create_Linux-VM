@@ -255,13 +255,21 @@ class Program
 
 ![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/47784a10-90c0-4048-8963-4c76e756e1a8)
 
-## 5. Copy the public key in the C# source code
+The PUBLIC key is available in the SSH key pair Azure resource
+
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/80a29552-2d79-452f-a478-0ec9b19616b0)
+
+The PRIVATE key *.pem file is downloaded
+
+![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/eb04ab56-4640-42cc-8062-8c4d2ad1a4eb)
+
+## 5. Copy the PUBLIC key in the C# source code
 
 ![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/806a7569-29c4-41ea-93e6-00afd465197a)
 
 ![image](https://github.com/luiscoco/Azure_SDK_Sample13_Create_Linux-VM/assets/32194879/789f7cbe-5cab-429c-909a-0407ee9cd602)
 
-## 6. Download the private key *.pem file
+## 6. Download the PRIVATE key *.pem file
 
 Copy the private key file (*.pem) and paste it in: "C:\Users\LEnriquez\.ssh"
 
